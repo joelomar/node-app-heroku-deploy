@@ -3,8 +3,8 @@ var express = require('express'),
     app = express(),
     session = require('express-session'),
     server = require('http').Server(app),
-    bodyParser = require('body-parser'),
-    io = require('socket.io')(server);
+    bodyParser = require('body-parser');
+    //io = require('socket.io')(server);
     
 var port = process.env.PORT || 5000;
 
@@ -135,11 +135,9 @@ app.get('/api/:user-:age', function (req, res, next) {
 });
 
 
-
-
 //-------------Socket Lines-------------//
 
-io.on('connection', function (socket) {
+/*io.on('connection', function (socket) {
 
     console.log('Socket connected');
 
@@ -158,7 +156,7 @@ io.on('connection', function (socket) {
     });
 
 
-});//-------Socket End Point----------// 
+});*///-------Socket End Point----------// 
 
 
 
