@@ -165,7 +165,7 @@ app.get('/api/:user-:age', function (req, res, next) {
 
 server.listen(port, function() {
 
-    console.log('exp server waiting for connections in port 5000');
+    console.log('server waiting for connections in port 5000');
 });
 
 
